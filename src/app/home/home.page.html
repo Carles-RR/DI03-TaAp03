@@ -1,21 +1,17 @@
-<ion-header [translucent]="true">
+﻿<ion-header>
   <ion-toolbar>
-    <ion-title> Blank </ion-title>
+    <ion-title>⚽ UEFA Euro 2024 — Estadísticas</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>
-      Start with Ionic
-      <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a>
-    </p>
-  </div>
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Goles por selección</ion-card-title>
+      <ion-card-subtitle>24 selecciones participantes, ordenadas por goles totales</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <app-graficos [selecciones]="selecciones"></app-graficos>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
