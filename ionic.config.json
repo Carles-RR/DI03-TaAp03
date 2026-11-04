@@ -1,0 +1,7 @@
+{
+  "name": "TaAp03",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
